@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="android.com.swoosh.SkillActivity">
+    tools:context="android.com.swoosh.Controller.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -53,25 +53,28 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
+            android:id="@+id/beginnerBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onBeginner"
             android:text="ToggleButton"
             android:textColor="@android:color/white"
             android:textOff="Beginner"
             android:textOn="Beginner" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/bollerBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onBoller"
             android:text="ToggleButton"
             android:textColor="@android:color/white"
             android:textOff="Boller"
@@ -79,7 +82,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/finishBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -87,6 +90,7 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onFinish"
         android:text="FINISH"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"

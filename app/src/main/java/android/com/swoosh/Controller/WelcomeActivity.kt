@@ -1,5 +1,6 @@
-package android.com.swoosh
+package android.com.swoosh.Controller
 
+import android.com.swoosh.R
 import android.content.Intent
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_welcome.*
